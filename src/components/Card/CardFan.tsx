@@ -96,7 +96,7 @@ const Card: FC<CardProps> = ({title, description, rotate}) => {
     const [cardIsOverlapped, setCardIsOverlapped] = useState(false);
     return (
         <motion.div
-            className={`fixed bg-[#09090b] h-[450px] w-[250px] rounded-lg p-4 border border-[#${cardIsOverlapped ? 'FF0000' : '28282b'}] origin-bottom-left overflow-hidden`}
+            className={`fixed bg-console h-[450px] w-[250px] rounded-lg p-4 border border-${cardIsOverlapped ? 'secondary' : 'primary'} origin-bottom-left overflow-hidden`}
             onMouseOver={() => {
                 setCardIsOverlapped(true);
             }}
@@ -132,7 +132,7 @@ const Card: FC<CardProps> = ({title, description, rotate}) => {
                 {description}
             </p>
             <span
-                className="fixed -bottom-10 -left-8 bg-[#FF0000] h-16 w-12 transform rotate-45 animate-pulse"
+                className="fixed -bottom-10 -left-8 bg-secondary h-16 w-12 transform rotate-45 animate-pulse"
             />
         </motion.div>
     )

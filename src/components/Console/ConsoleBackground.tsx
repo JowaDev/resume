@@ -13,7 +13,7 @@ export const ConsoleBackground: FC<ConsoleBackgroundProps> = ({children}) => {
     return (
         <>
             <motion.div
-                className={`relative h-full w-full rounded-lg overflow-hidden bg-black border ${isConsoleClosed || isWindowReduced ? 'border-[#FF0000]' : 'border-[#28282b]'}`}
+                className={`relative h-full w-full rounded-lg overflow-hidden bg-black ${isConsoleClosed || isWindowReduced && 'border border-secondary'}`}
                 initial={{
                     opacity: 0,
                     y: "-100%"

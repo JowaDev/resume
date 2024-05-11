@@ -14,7 +14,7 @@ export const ConsoleFooter: FC<ConsoleFooterProps> = () => {
     const parentRef = useRef<HTMLDivElement>(null);
     return (
         <div
-            className='flex fixed bottom-0 w-full border-t border-[#28282b] h-8 items-center overflow-hidden z-20 text-[12px] font-thin bg-[#09090b]'
+            className='flex fixed bottom-0 w-full border-t border-primary h-8 items-center overflow-hidden z-20 text-[12px] font-thin bg-console'
             ref={parentRef}
         >
             <Halo
@@ -24,18 +24,23 @@ export const ConsoleFooter: FC<ConsoleFooterProps> = () => {
                 parentRef={parentRef}
             />
             <div
-                className='px-2 h-full border-r border-[#28282b] flex items-center w-fit space-x-2'
+                className='px-2 h-full border-r border-primary flex items-center w-fit space-x-2'
             >
                 <GitBranchIcon
                     size={15}
-                    color='#FF0000'
+                    className='text-secondary'
                 />
-                <span>
-                    main
-                </span>
+                <Link
+                    href='https://github.com/JowaDev/resume'
+                    target='_blank'
+                >
+                    <span>
+                        master
+                    </span>
+                </Link>
             </div>
             <div
-                className='px-2 h-full flex items-center w-fit space-x-2 border-r border-[#28282b]'
+                className='px-2 h-full flex items-center w-fit space-x-2 border-r border-primary'
             >
                 <motion.span
                     whileHover={{
@@ -48,12 +53,12 @@ export const ConsoleFooter: FC<ConsoleFooterProps> = () => {
                 >
                     <RefreshCcwIcon
                         size={15}
-                        color='#FF0000'
+                        className='text-secondary'
                     />
                 </motion.span>
             </div>
             <div
-                className='px-2 h-full flex items-center w-fit space-x-2 border-r border-[#28282b]'
+                className='px-2 h-full flex items-center w-fit space-x-2 border-r border-primary'
             >
                 <Link
                     href='https://eu.umami.is/share/mhcJrIxVskrjqxV1/resume.jowa.dev'
@@ -61,7 +66,7 @@ export const ConsoleFooter: FC<ConsoleFooterProps> = () => {
                 >
                     <AreaChartIcon
                         size={15}
-                        color='#FF0000'
+                        className='text-secondary'
                     />
                 </Link>
             </div>

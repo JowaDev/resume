@@ -14,7 +14,7 @@ export const ConsoleHeader: FC<ConsoleProps> = () => {
     const {setIsWindowReduced, setIsConsoleClosed} = useContext(globalContext);
     return (
         <div
-            className='relative grid grid-cols-12 border-b border-[#28282b] h-12 items-center px-[16px] overflow-hidden'
+            className='relative grid grid-cols-12 border-b border-primary h-12 items-center px-[16px] overflow-hidden'
             ref={parentRef}
         >
             <Halo
@@ -24,23 +24,22 @@ export const ConsoleHeader: FC<ConsoleProps> = () => {
                 parentRef={parentRef}
             />
             <div
-                className='col-span-3 flex items-center border-r border-[#28282b] h-full cursor-default text-white'
+                className='col-span-3 flex items-center border-r border-primary h-full cursor-default text-white'
             >
                 <ChevronRight
-                    color='#FF0000'
-                    className='animate-pulse'
+                    className='animate-pulse text-secondary'
                 />
                 JowaDev
             </div>
             <div
-                className='col-span-2 flex justify-center items-center border-r border-[#28282b] h-full'
+                className='col-span-2 flex justify-center items-center border-r border-primary h-full'
             >
                 <NavLink
                     word={'_welcome'}
                 />
             </div>
             <div
-                className='col-span-2 flex justify-center items-center border-r border-[#28282b] h-full'
+                className='col-span-2 flex justify-center items-center border-r border-primary h-full'
             >
                 <NavLink
                     word={'_about-me'}
@@ -48,7 +47,7 @@ export const ConsoleHeader: FC<ConsoleProps> = () => {
                 />
             </div>
             <div
-                className='col-span-2 flex justify-center items-center border-r border-[#28282b] h-full'
+                className='col-span-2 flex justify-center items-center border-r border-primary h-full'
             >
                 <NavLink
                     word={'_portfolio'}
@@ -57,14 +56,14 @@ export const ConsoleHeader: FC<ConsoleProps> = () => {
                 />
             </div>
             <span
-                className='absolute flex items-center inset-y-0 top-1/2 right-[25px] transform -translate-y-1/2 h-3 w-3 bg-[#FF0000] rounded-full cursor-pointer'
+                className='absolute flex items-center top-1/2 right-[25px] transform -translate-y-1/2 h-3 w-3 bg-secondary rounded-full cursor-pointer animate-pulse'
                 onClick={() => setIsConsoleClosed(prevState => !prevState)}
             />
             <span
-                className='absolute flex items-center inset-y-0 top-1/2 right-[45px] transform -translate-y-1/2 h-3 w-3 bg-green-600 rounded-full'
+                className='absolute flex items-center top-1/2 right-[45px] transform -translate-y-1/2 h-3 w-3 bg-green-600 rounded-full'
             />
             <span
-                className='absolute flex items-center inset-y-0 top-1/2 right-[65px] transform -translate-y-1/2 h-3 w-3 bg-gray-600 rounded-full cursor-pointer'
+                className='absolute flex items-center top-1/2 right-[65px] transform -translate-y-1/2 h-3 w-3 bg-gray-600 rounded-full cursor-pointer animate-pulse'
                 onClick={() => setIsWindowReduced(prevState => !prevState)}
             />
         </div>

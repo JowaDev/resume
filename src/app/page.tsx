@@ -10,7 +10,7 @@ export default function Home() {
                 className='fixed text-2xl font-mono text-white z-30 w-1/3'
             />
             <div
-                className='relative flex items-end p-8 justify-center left-[35%] h-[110%] -top-1/3 transform rotate-45 overflow-hidden bg-[#183D3D] z-20 border border-[#28282b] transition duration-500 ease-in-out hover:scale-110 hover:text-white text-transparent'
+                className='relative flex items-end p-8 justify-center left-[35%] h-[110%] -top-1/3 transform rotate-45 overflow-hidden bg-[#183D3D] z-20 border border-primary transition duration-500 ease-in-out hover:scale-110 hover:text-white text-transparent'
             >
                 <span
                     className='transform -rotate-45'
