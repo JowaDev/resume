@@ -68,7 +68,7 @@ export const CardFan: FC<CardFanProps> = () => {
         >
             <Spotlight/>
             <div
-                className="flex fixed top-1/4 left-1/2 transform -translate-y-1/4 -translate-x-1/2 z-[1]"
+                className={`${isWindowReduced ? 'flex' : 'hidden'} fixed top-1/4 left-1/2 transform -translate-y-1/4 -translate-x-1/2 z-[1]`}
             >
                 {
                     cards.map(({id, title, description, rotate}) => (
