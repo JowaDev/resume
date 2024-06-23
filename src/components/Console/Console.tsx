@@ -13,7 +13,7 @@ interface FadeInProps {
 
 export const Console: FC<FadeInProps> = ({children}) => {
     const {isWindowReduced, setIsWindowReduced, isConsoleClosed} = useContext(globalContext);
-    useCloseConsole(5000);
+    useCloseConsole(8000);
     return (
         <motion.div
             className={`absolute inset-0 bg-[#09090b] rounded-lg border border-primary overflow-hidden h-full w-full ${isWindowReduced && "cursor-pointer"}`}

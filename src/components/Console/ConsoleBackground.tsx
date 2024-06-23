@@ -3,6 +3,7 @@
 import {FC, ReactNode, useContext} from "react";
 import {motion} from "framer-motion";
 import {globalContext} from "@/components/Layout/GlobalContext";
+import {AnimatedLine} from "@/components/Card/CardFan";
 
 interface ConsoleBackgroundProps {
     children: ReactNode;
@@ -25,6 +26,11 @@ export const ConsoleBackground: FC<ConsoleBackgroundProps> = ({children}) => {
                 }}
                 transition={{type: "spring", duration: 1, bounce: .5}}
             >
+                {
+                    isConsoleClosed && (
+                        <AnimatedLine/>
+                    )
+                }
                 {children}
             </motion.div>
         </>
