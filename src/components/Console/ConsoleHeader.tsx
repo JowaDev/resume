@@ -55,6 +55,14 @@ export const ConsoleHeader: FC<ConsoleProps> = () => {
                     target='_blank'
                 />
             </div>
+            <div
+                className='col-span-2 flex justify-center items-center border-r border-primary h-full'
+            >
+                <NavLink
+                    word={'_curriculum-vitae'}
+                    href='/cv'
+                />
+            </div>
             <span
                 className='absolute flex items-center top-1/2 right-[25px] transform -translate-y-1/2 h-3 w-3 bg-secondary rounded-full cursor-pointer animate-pulse'
                 onClick={() => setIsConsoleClosed(prevState => !prevState)}

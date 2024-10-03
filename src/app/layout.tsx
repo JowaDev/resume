@@ -4,10 +4,6 @@ import "./globals.css";
 
 import {cn} from "@/lib/utils"
 import {ReactNode} from "react";
-import {Console} from "@/components/Console/Console";
-import {GlobalContext} from "@/components/Layout/GlobalContext";
-import {ConsoleBackground} from "@/components/Console/ConsoleBackground";
-import {CardFan} from "@/components/Card/CardFan";
 import Script from "next/script";
 
 const fontSans = Fira_Code({
@@ -31,22 +27,11 @@ export default function RootLayout({
         >
         <body
             className={cn(
-                "min-h-screen bg-background antialiased overflow-y-hidden",
+                "min-h-screen bg-background antialiased",
                 fontSans.className
             )}
         >
-        <main
-            className="h-screen w-screen p-12 bg-[#121212] text-white"
-        >
-            <GlobalContext>
-                <ConsoleBackground>
-                    <Console>
-                        {children}
-                    </Console>
-                </ConsoleBackground>
-                <CardFan/>
-            </GlobalContext>
-        </main>
+        {children}
         </body>
         <Script
             defer
