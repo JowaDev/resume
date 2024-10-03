@@ -26,7 +26,7 @@ export const CV: FC<CVProps> = () => {
             className='h-full w-full flex justify-center items-center'
         >
             <div
-                className='max-w-4xl h-full shadow-black shadow-lg'
+                className='min-w-[896px] max-w-[896px] h-full shadow-black shadow-lg'
             >
                 <div
                     className="h-64 w-full relative overflow-hidden py-8 px-48 flex items-center justify-center bg-gray-500"
@@ -243,7 +243,8 @@ export const CV: FC<CVProps> = () => {
                                     'Kubernetes & K3\'s',
                                     'Next.js',
                                     'AWS (EC2, S3, EKS)',
-                                    'Infomaniak (Jelastic & Public Cloud)'
+                                    'Infomaniak (Jelastic & Public Cloud)',
+                                    'Azure Fabric (BI & RTA)',
                                 ].map((item, n) => (
                                     <li
                                         key={n}
