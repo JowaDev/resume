@@ -2,13 +2,13 @@ import {FC} from "react";
 import me from '@/img/me.jpeg'
 import bg from '@/img/img.png'
 import Image from 'next/image'
-import {CakeIcon, EarthIcon, GithubIcon, MailIcon, MapPin, PhoneIcon} from "lucide-react";
+import {CakeIcon, EarthIcon, GithubIcon, MailIcon, MapPin, MapPinned, PhoneIcon} from "lucide-react";
 import Link from "next/link";
 
 const personalData = {
-    origin: ['Suisse', <MailIcon key={0} size={16}/>],
+    origin: ['Suisse', <MapPin key={0} size={16}/>],
     birthday: ['13/04/1997', <CakeIcon key={0} size={16}/>],
-    location: ['Vétroz (VS)', <MapPin key={0} size={16}/>],
+    location: ['Vétroz (VS)', <MapPinned key={0} size={16}/>],
     name: 'DASEK Joiakim',
     email: ['dasek.joiakim@gmail.com', <MailIcon key={0} size={16}/>],
     phone: ['+41 79 358 61 44', <PhoneIcon key={0} size={16}/>],
