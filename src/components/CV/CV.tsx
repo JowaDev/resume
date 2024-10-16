@@ -82,7 +82,7 @@ export const CV: FC<CVProps> = () => {
                         <p
                             className='text-sm mt-2'
                         >
-                            Étudiant passionné en IT à la HES-SO, avec une expérience en développement
+                            Étudiant à la <Link href='https://portfolio.jowa.dev/DTA'>Digital Team Academy</Link> passionné en IT à la HES-SO, avec une expérience en développement
                             d&apos;applications web et intégration de solutions cloud.
                         </p>
                         <div
@@ -270,7 +270,7 @@ export const CV: FC<CVProps> = () => {
                         <p
                             className='text-sm font-bold mt-4'
                         >
-                            HEG - Filière informatique de gestion
+                            HEG - Filière informatique de gestion en <Link href='https://portfolio.jowa.dev/DTA'>Digital Team Academy</Link>
                         </p>
                         <p
                             className='text-sm italic'
