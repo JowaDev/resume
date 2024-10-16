@@ -213,8 +213,9 @@ export const CV: FC<CVProps> = () => {
                                 [
                                     "Autonomie",
                                     "Travail d’équipe",
-                                    "Gestion de projet",
-                                    "Proactif"
+                                    "Dialogue",
+                                    "Proactif",
+                                    "Résilience"
                                 ].map((item, n) => (
                                     <li
                                         key={n}
