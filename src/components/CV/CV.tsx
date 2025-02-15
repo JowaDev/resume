@@ -82,7 +82,8 @@ export const CV: FC<CVProps> = () => {
                         <p
                             className='text-sm mt-2'
                         >
-                            Étudiant à la <Link href='https://portfolio.jowa.dev/DTA'>Digital Team Academy</Link> passionné en IT à la HES-SO, avec une expérience en développement
+                            Étudiant à la <Link href='https://portfolio.jowa.dev/DTA'>Digital Team
+                            Academy</Link> passionné en IT à la HES-SO, avec une expérience en développement
                             d&apos;applications web et intégration de solutions cloud.
                         </p>
                         <div
@@ -270,7 +271,8 @@ export const CV: FC<CVProps> = () => {
                         <p
                             className='text-sm font-bold mt-4'
                         >
-                            HEG - Filière informatique de gestion en <Link href='https://portfolio.jowa.dev/DTA'>Digital Team Academy</Link>
+                            HEG - Filière informatique de gestion en <Link href='https://portfolio.jowa.dev/DTA'>Digital
+                            Team Academy</Link>
                         </p>
                         <p
                             className='text-sm italic'
@@ -340,18 +342,18 @@ export const CV: FC<CVProps> = () => {
                             <span
                                 className='font-bold'
                             >
-                                Fullstack développeur
+                                Développeur backend
                             </span>
                             <span
                                 className='text-xs'
                             >
-                                Depuis Juillet
+                                Depuis Février
                             </span>
                         </div>
                         <p
                             className='text-sm italic'
                         >
-                            OKenawa
+                            <Link href='https://okenawa.ch' target='_blank'>Infomaniak</Link>
                         </p>
                         <div
                             className='px-4'
@@ -362,8 +364,8 @@ export const CV: FC<CVProps> = () => {
                                 <li
                                     className='list-item text-sm'
                                 >
-                                    Développement d’une WebApp avec headless CMS, ERP pour de l’E-Commerce et streaming
-                                    vidéo.
+                                    Je participe au développement et à la maintenance de solutions backend robustes,
+                                    contribuant ainsi à l’évolution de l&apos;infrastructure logicielle d’Infomaniak.
                                 </li>
                             </ul>
                         </div>
